@@ -1,0 +1,17 @@
+git status
+
+git add .
+
+git commit -m ""
+
+git push
+
+git pull
+
+git pull origin feature/structure
+
+git checkout nom_branche
+
+git checkout -b nom_branche
+
+git push --set-upstream origin feature/structure

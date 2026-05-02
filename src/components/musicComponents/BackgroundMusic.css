@@ -1,0 +1,13 @@
+.audio {
+    background-color: #0b0f1a;
+    color: #9511be;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.2s;
+}
+
+.audio:hover {
+    color: #c84cff;
+    text-shadow: 0 0 8px #9511be;
+}
