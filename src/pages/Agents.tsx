@@ -4,4 +4,4 @@ function Agents() {
     )
 }
 
-export default Agents;
+export {Agents};

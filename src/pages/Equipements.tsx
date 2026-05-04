@@ -4,4 +4,4 @@ function Equipements() {
     )
 }
 
-export default Equipements;
+export {Equipements};

@@ -4,4 +4,4 @@ function Affectations() {
     )
 }
 
-export default Affectations;
+export {Affectations};

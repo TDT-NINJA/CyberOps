@@ -4,4 +4,4 @@ function Missions() {
     )
 }
 
-export default Missions;
+export {Missions};

@@ -4,4 +4,4 @@ function Implants() {
     )
 }
 
-export default Implants;
+export {Implants};

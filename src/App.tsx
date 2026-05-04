@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
-import {Affectations, Agents, Dashboard, Equipements, Implants, MarcheNoire, Missions, Parametre, Rapports} from "./pages/indexPages.ts";
+import {Affectations, Agents, Dashboard, Equipements, Implants, MarcheNoire, Missions, Parametre, Rapports} from "./pages";
 import './App.css'
 
 function App() {

@@ -4,4 +4,4 @@ function Parametre() {
     )
 }
 
-export default Parametre;
+export {Parametre};

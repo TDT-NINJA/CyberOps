@@ -4,4 +4,4 @@ function MarcheNoire() {
     )
 }
 
-export default MarcheNoire;
+export {MarcheNoire};

@@ -4,4 +4,4 @@ function Rapports(){
     )
 }
 
-export default Rapports;
+export {Rapports};
