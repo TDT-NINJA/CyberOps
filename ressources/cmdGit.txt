@@ -15,3 +15,5 @@ git checkout nom_branche
 git checkout -b nom_branche
 
 git push --set-upstream origin feature/structure
+
+git push origin "non_branch"
