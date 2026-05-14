@@ -1,0 +1,167 @@
+/* Implants.css */
+
+.implants_page {
+    --neon-cyan: #00f0ff;
+    --neon-pink: #ff2bd6;
+    --bg-dark: #0a0e1a;
+    --text-primary: #e5f6ff;
+    --text-muted: #7a8a9a;
+    --border-dim: rgba(0, 240, 255, 0.25);
+
+    min-height: 100vh;
+    padding: 2rem clamp(1rem, 4vw, 3rem);
+    background:
+            radial-gradient(ellipse at top, rgba(0, 240, 255, 0.08), transparent 60%),
+            radial-gradient(ellipse at bottom right, rgba(255, 43, 214, 0.06), transparent 60%),
+            var(--bg-dark);
+    color: var(--text-primary);
+    font-family: "Share Tech Mono", "Courier New", monospace;
+}
+
+/* --- Header --- */
+.implants_page__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px dashed var(--border-dim);
+}
+
+.implants_page__title {
+    margin: 0;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
+}
+
+.implants_page__title::before {
+    content: "// ";
+    color: var(--neon-pink);
+    opacity: 0.8;
+}
+
+.implants_page__count {
+    padding: 0.25rem 0.65rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--neon-pink);
+    border: 1px solid var(--neon-pink);
+    border-radius: 2px;
+    background: rgba(255, 43, 214, 0.08);
+}
+
+/* --- Grid --- */
+.implants_page__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
+    justify-items: start;
+}
+
+/* La carte garde sa largeur intrinsèque (300px),
+   mais on permet l'étirement si la cellule de grille est plus large */
+.implants_page__grid > * {
+    width: 100%;
+    max-width: 360px;
+}
+
+/* --- Empty state --- */
+.implants_page__empty {
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    border: 1px dashed var(--border-dim);
+    border-radius: 4px;
+    background: rgba(0, 240, 255, 0.02);
+    text-align: center;
+}/* Implants.css */
+
+.implants_page {
+    --neon-cyan: #00f0ff;
+    --neon-pink: #ff2bd6;
+    --bg-dark: #0a0e1a;
+    --text-primary: #e5f6ff;
+    --text-muted: #7a8a9a;
+    --border-dim: rgba(0, 240, 255, 0.25);
+
+    min-height: 100vh;
+    padding: 2rem clamp(1rem, 4vw, 3rem);
+    background:
+            radial-gradient(ellipse at top, rgba(0, 240, 255, 0.08), transparent 60%),
+            radial-gradient(ellipse at bottom right, rgba(255, 43, 214, 0.06), transparent 60%),
+            var(--bg-dark);
+    color: var(--text-primary);
+    font-family: "Share Tech Mono", "Courier New", monospace;
+}
+
+/* --- Header --- */
+.implants_page__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px dashed var(--border-dim);
+}
+
+.implants_page__title {
+    margin: 0;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
+}
+
+.implants_page__title::before {
+    content: "// ";
+    color: var(--neon-pink);
+    opacity: 0.8;
+}
+
+.implants_page__count {
+    padding: 0.25rem 0.65rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--neon-pink);
+    border: 1px solid var(--neon-pink);
+    border-radius: 2px;
+    background: rgba(255, 43, 214, 0.08);
+}
+
+/* --- Grid --- */
+.implants_page__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+    justify-items: start;
+}
+
+/* La carte garde sa largeur intrinsèque (300px),
+   mais on permet l'étirement si la cellule de grille est plus large */
+.implants_page__grid > * {
+    width: 100%;
+    max-width: 360px;
+}
+
+/* --- Empty state --- */
+.implants_page__empty {
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    border: 1px dashed var(--border-dim);
+    border-radius: 4px;
+    background: rgba(0, 240, 255, 0.02);
+    text-align: center;
+}

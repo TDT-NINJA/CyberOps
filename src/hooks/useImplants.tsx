@@ -22,9 +22,9 @@ function ImplantReducer (state: StateImplant, action: ActionImplant) : StateImpl
     console.log(state, action);
     switch (action.type) {
         case "ADD_IMPLANT" :
-            return state
+            return { ...state, implants: [...state.implants, action.payload]}
         case "REMOVE_IMPLANT":
-            return state
+            return { ...state, implants: [...state.implants.filter((implant) => implant.id !== action.payload.id)]}
         default:
             return state
     }

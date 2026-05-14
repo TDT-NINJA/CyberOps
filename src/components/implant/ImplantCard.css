@@ -1,0 +1,155 @@
+/* ImplantCard.css */
+
+.implant_card__container {
+    --neon-cyan: #00f0ff;
+    --neon-pink: #ff2bd6;
+    --neon-yellow: #f7ff5e;
+    --bg-dark: #0a0e1a;
+    --bg-panel: #111827;
+    --border-dim: rgba(0, 240, 255, 0.25);
+    --text-primary: #e5f6ff;
+    --text-muted: #7a8a9a;
+
+    position: relative;
+    width: 300px;
+    padding: 1rem 1rem 1.1rem;
+    background: linear-gradient(160deg, var(--bg-panel) 0%, var(--bg-dark) 100%);
+    border: 1px solid var(--border-dim);
+    border-left: 2px solid var(--neon-cyan);
+    border-radius: 4px;
+    color: var(--text-primary);
+    font-family: "Share Tech Mono", "Courier New", monospace;
+    box-shadow:
+            0 0 0 1px rgba(0, 240, 255, 0.05),
+            0 4px 20px rgba(0, 0, 0, 0.6),
+            inset 0 0 30px rgba(0, 240, 255, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.implant_card__container:hover {
+    transform: translateY(-2px);
+    border-color: var(--neon-cyan);
+    box-shadow:
+            0 0 0 1px var(--neon-cyan),
+            0 6px 24px rgba(0, 240, 255, 0.25),
+            inset 0 0 30px rgba(0, 240, 255, 0.06);
+}
+
+/* Triangle décoratif en haut à droite */
+.implant_card__container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: var(--neon-cyan);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    opacity: 0.8;
+}
+
+/* --- Header --- */
+.implant_card__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--border-dim);
+}
+
+.implant_card__title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+}
+
+.implant_card__rarity {
+    flex-shrink: 0;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--neon-pink);
+    border: 1px solid var(--neon-pink);
+    border-radius: 2px;
+    background: rgba(255, 43, 214, 0.08);
+}
+
+/* --- Info list --- */
+.implant_card__info {
+    margin: 0 0 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.implant_card__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    background: rgba(0, 240, 255, 0.04);
+    border-left: 2px solid var(--neon-pink);
+    font-size: 0.85rem;
+}
+
+.implant_card__label {
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.implant_card__label::before {
+    content: "> ";
+    color: var(--neon-pink);
+    opacity: 0.7;
+}
+
+.implant_card__value {
+    margin: 0;
+    color: var(--text-primary);
+    text-align: right;
+    word-break: break-word;
+}
+
+.implant_card__value--accent {
+    color: var(--neon-yellow);
+    text-shadow: 0 0 6px rgba(247, 255, 94, 0.4);
+}
+
+/* --- Delete button --- */
+.implant_card__delete {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    background: transparent;
+    color: var(--neon-pink);
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 1px solid var(--neon-pink);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.implant_card__delete:hover {
+    background: var(--neon-pink);
+    color: var(--bg-dark);
+    box-shadow: 0 0 12px rgba(255, 43, 214, 0.6);
+}
+
+.implant_card__delete:active {
+    transform: translateY(1px);
+}
